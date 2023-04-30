@@ -12,7 +12,7 @@ export default function Day1() {
           <h2>Section 1</h2>
           <div className={styles.column}>
             <div className={styles.box}>Box 1</div>
-            <div className={styles.box}>Box 2</div>
+            <div className={styles.box}>Boxx 2</div>
           </div>
           <div className={styles.column}>
             <div className={styles.box}>Box 3</div>
