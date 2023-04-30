@@ -23,32 +23,11 @@ export default function Day1() {
             <div className={styles.box}>Box 2</div>
             <div className={styles.box}>Box 3</div>
             <div className={styles.box}>Box 4</div>
-            <div className={styles.box}>Box 4</div>
-            <div className={styles.box}>Box 1</div>
-            <div className={styles.box}>Box 2</div>
-            <div className={styles.box}>Box 3</div>
-            <div className={styles.box}>Box 4</div>
-            <div className={styles.box}>Box 1</div>
-            <div className={styles.box}>Box 2</div>
-            <div className={styles.box}>Box 3</div>
-            <div className={styles.box}>Box 4</div>
           </div>
         </section>
         <section className={styles.section}>
           <h2>Section 2</h2>
           <div className={styles.row}>
-            <div className={styles.box}>Box 5</div>
-            <div className={styles.box}>Box 6</div>
-            <div className={styles.box}>Box 7</div>
-            <div className={styles.box}>Box 8</div>
-            <div className={styles.box}>Box 5</div>
-            <div className={styles.box}>Box 6</div>
-            <div className={styles.box}>Box 7</div>
-            <div className={styles.box}>Box 8</div>
-            <div className={styles.box}>Box 5</div>
-            <div className={styles.box}>Box 6</div>
-            <div className={styles.box}>Box 7</div>
-            <div className={styles.box}>Box 8</div>
             <div className={styles.box}>Box 5</div>
             <div className={styles.box}>Box 6</div>
             <div className={styles.box}>Box 7</div>
