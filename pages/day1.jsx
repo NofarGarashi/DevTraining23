@@ -13,8 +13,23 @@ export default function Day1() {
           <div className={styles.column}>
             <div className={styles.box}>Box 1</div>
             <div className={styles.box}>Box 2</div>
-          </div>
-          <div className={styles.column}>
+            <div className={styles.box}>Box 3</div>
+            <div className={styles.box}>Box 4</div>
+            <div className={styles.box}>Box 1</div>
+            <div className={styles.box}>Box 2</div>
+            <div className={styles.box}>Box 3</div>
+            <div className={styles.box}>Box 4</div>
+            <div className={styles.box}>Box 1</div>
+            <div className={styles.box}>Box 2</div>
+            <div className={styles.box}>Box 3</div>
+            <div className={styles.box}>Box 4</div>
+            <div className={styles.box}>Box 4</div>
+            <div className={styles.box}>Box 1</div>
+            <div className={styles.box}>Box 2</div>
+            <div className={styles.box}>Box 3</div>
+            <div className={styles.box}>Box 4</div>
+            <div className={styles.box}>Box 1</div>
+            <div className={styles.box}>Box 2</div>
             <div className={styles.box}>Box 3</div>
             <div className={styles.box}>Box 4</div>
           </div>
@@ -24,8 +39,18 @@ export default function Day1() {
           <div className={styles.row}>
             <div className={styles.box}>Box 5</div>
             <div className={styles.box}>Box 6</div>
-          </div>
-          <div className={styles.row}>
+            <div className={styles.box}>Box 7</div>
+            <div className={styles.box}>Box 8</div>
+            <div className={styles.box}>Box 5</div>
+            <div className={styles.box}>Box 6</div>
+            <div className={styles.box}>Box 7</div>
+            <div className={styles.box}>Box 8</div>
+            <div className={styles.box}>Box 5</div>
+            <div className={styles.box}>Box 6</div>
+            <div className={styles.box}>Box 7</div>
+            <div className={styles.box}>Box 8</div>
+            <div className={styles.box}>Box 5</div>
+            <div className={styles.box}>Box 6</div>
             <div className={styles.box}>Box 7</div>
             <div className={styles.box}>Box 8</div>
           </div>

@@ -21,10 +21,14 @@
 
 .column {
   display: flexbox;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 100vh;
 }
 
 .row {
-  display: block;
+  display: flex;
 }
 
 .box {
