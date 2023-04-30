@@ -25,6 +25,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   max-height: 50vh;
+  max-height: 100vh;
 }
 
 .row {
@@ -41,4 +42,17 @@
   font-size: 0.75rem;
   text-align: center;
   flex-shrink: 2;
+}
+
+@media only screen and (max-width: 576px){
+  .box {
+    background-color: antiquewhite;
+    color: black;
+    padding: 10px;
+    margin: 20px;
+    font-size: 0.75rem;
+    text-align: center;
+    flex-shrink: 2;
+  }
+  
 }
