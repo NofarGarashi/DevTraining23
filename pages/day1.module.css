@@ -44,6 +44,11 @@
   flex-shrink: 2;
 }
 
+.box:hover {
+  transition: background-color 0.3s;
+  background-color: black;
+}
+
 @media only screen and (max-width: 576px){
   .box {
     background-color: antiquewhite;
