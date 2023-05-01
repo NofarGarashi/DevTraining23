@@ -16,18 +16,22 @@ export default function Day1b() {
         />
         <div className={styles.ham}>|||</div>
         <div className={styles.navItems}>
-          {/* <a className={styles.item}>Home</a>
-          <a className={styles.item}>About</a>
-          <a className={styles.item}>Contact Us</a> */}
+          <h4 className={styles.item} href="/Home">Home</h4>
+          <h4 className={styles.item} href="/About">About</h4>
+          <h4 className={styles.item} href="/Contactus">Contact Us</h4>
         </div>
       </div>
       <div className={styles.heroSection}>
-        {/* <h3>From our kitchen, <br/> to your tummy</h3> */}
+        <h1>
+          From our kitchen,
+          <br />
+          to your tummy
+        </h1>
         <div>
           <Image
             src="/donuts.png"
-            height={300}
-            width={300}
+            height={500}
+            width={500}
             alt="donut logo"
             className={styles.donutImage}
           />
@@ -38,22 +42,22 @@ export default function Day1b() {
         <div className={styles.galleryItems}>
           <Image
             src="/d1.jpg"
-            height={200}
-            width={150}
+            height={300}
+            width={250}
             alt="donut logo"
             className={styles.donutImage}
           />
           <Image
             src="/d2.jpg"
-            height={200}
-            width={150}
+            height={300}
+            width={250}
             alt="donut logo"
             className={styles.donutImage}
           />
           <Image
             src="/d3.jpg"
-            height={200}
-            width={150}
+            height={300}
+            width={250}
             alt="donut logo"
             className={styles.donutImage}
           />
