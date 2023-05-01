@@ -64,10 +64,10 @@
 
   .heroSection {
     flex-direction: row;
-}
+  }
 
-.galleryItems {
-    flex-direction: row;
-}
+  .galleryItems {
+      flex-direction: row;
+  }
 
 }

@@ -2,8 +2,8 @@ import { useState } from 'react';
 
 export default function useTask() {
   const [tasks, setTasks] = useState([
-    { id: 1, title: 'Learn React' },
-    { id: 2, title: 'Learn Next.js' },
+    { id: 1, title: 'Learn React', isComplete: false },
+    { id: 2, title: 'Learn Next.js', isComplete: false },
   ]);
   const [taskName, setTaskName] = useState('');
 
@@ -20,5 +20,28 @@ export default function useTask() {
     setTasks((current) => current.filter((task) => task.id !== id));
   };
 
-  return [tasks, taskName, addTask, onTaskChange, removeTask];
+  const handleToggleChange = (id) => {
+    setTasks((current) => {
+      const taskIndex = current.findIndex((t) => t.id === id);
+      if (taskIndex !== -1) {
+        const newTasks = [...current];
+        newTasks.splice(taskIndex, 1, {
+          ...newTasks[taskIndex],
+          isComplete: !newTasks[taskIndex].isComplete,
+        });
+        // newTasks[taskIndex].isComplete = !newTasks[taskIndex].isComplete;
+        return newTasks;
+      }
+      return current;
+    });
+  };
+
+  return [
+    tasks,
+    taskName,
+    addTask,
+    onTaskChange,
+    removeTask,
+    handleToggleChange,
+  ];
 }

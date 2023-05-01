@@ -5,7 +5,7 @@ import useTask from './useTask';
 
 function TaskList() {
   const [
-    tasks, taskName, addTask, onTaskChange, removeTask,
+    tasks, taskName, addTask, onTaskChange, removeTask, handleToggleChange,
   ] = useTask();
   const [showPopup, setShowPopup] = useState(false);
 
@@ -45,12 +45,13 @@ function TaskList() {
       <ul className={styles.list}>
         {tasks.map((task) => (
           <li key={task.id} className={styles.listItem}>
-            {task.title}
+            <input className={styles.checkBox} type="checkbox" value={task.isComplete} onChange={() => handleToggleChange(task.id)} />
+            <div className={`${task.isComplete ? styles.completed : ''}`}>{task.title}</div>
             <button className={styles.deleteButton} type="button" onClick={() => removeTask(task.id)}>Delete</button>
           </li>
         ))}
       </ul>
-      <input type="text" value={taskName} onChange={onTaskChange} placeholder="Add new task" />
+      <input type="text" className={styles.inputText} value={taskName} onChange={onTaskChange} placeholder="Add new task" />
       <button type="button" className={styles.addButton} onClick={addTask}>Add</button>
     </div>
   );
