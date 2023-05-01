@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import Popup from '../components/Popup';
 import styles from './day2.module.css';
+import useTask from './useTask';
 
 function TaskList() {
-  const [tasks, setTasks] = useState([
-    { id: 1, title: 'Learn React' },
-    { id: 2, title: 'Learn Next.js' },
-  ]);
+  const [
+    tasks, taskName, addTask, onTaskChange, removeTask,
+  ] = useTask();
   const [showPopup, setShowPopup] = useState(false);
 
   const openPopup = () => {
@@ -15,10 +15,6 @@ function TaskList() {
 
   const closePopup = () => {
     setShowPopup(false);
-  };
-
-  const addTask = () => {
-    setTasks([...tasks, { id: tasks.length + 1, title: `Task ${tasks.length + 1}` }]);
   };
 
   const instructionsText = `
@@ -48,10 +44,14 @@ function TaskList() {
       )}
       <ul className={styles.list}>
         {tasks.map((task) => (
-          <li key={task.id} className={styles.listItem}>{task.title}</li>
+          <li key={task.id} className={styles.listItem}>
+            {task.title}
+            <button className={styles.deleteButton} type="button" onClick={() => removeTask(task.id)}>Delete</button>
+          </li>
         ))}
       </ul>
-      <button type="button" className={styles.addButton} onClick={addTask}>Add Task</button>
+      <input type="text" value={taskName} onChange={onTaskChange} placeholder="Add new task" />
+      <button type="button" className={styles.addButton} onClick={addTask}>Add</button>
     </div>
   );
 }

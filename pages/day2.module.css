@@ -50,3 +50,26 @@
   background-color: #0056b3;
   border-color: #0056b3;
 }
+
+.deleteButton {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  color: #ff0000;
+  border: 2px solid #ff0000;
+  margin-left: 20px;
+}
+
+.deleteButton:hover {
+  color: #ffffff;
+  border: 2px solid #852727;
+  background-color: #852727;
+}
